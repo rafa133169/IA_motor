@@ -27,6 +27,12 @@ target_include_directories(nevrocpp
 add_executable(basic_usage examples/basic_usage.cpp)
 target_link_libraries(basic_usage nevrocpp)
 
+add_executable(basic_training examples/basic_training.cpp)
+target_link_libraries(basic_training nevrocpp)
+
+add_executable(polymorphic_usage examples/polymorphic_usage.cpp)
+target_link_libraries(polymorphic_usage nevrocpp)
+
 # -------------------------
 # TESTING
 # -------------------------

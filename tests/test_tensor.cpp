@@ -35,6 +35,7 @@ TEST(TensorTest, DotProduct) {
 	EXPECT_FLOAT_EQ(c.get(1, 1), 154.0f);
 }
 
+
 TEST(MSETest, ComputeMSE) {
 	core::Tensor y_true(1, 3);
 	core::Tensor y_pred(1, 3);
@@ -43,4 +44,16 @@ TEST(MSETest, ComputeMSE) {
 	// MSE = ((1-2)^2 + (2-2)^2 + (3-4)^2) / 3 = (1 + 0 + 1) / 3 = 0.666...
 	float mse = losses::MSE::compute(y_true, y_pred);
 	EXPECT_NEAR(mse, 0.6667f, 1e-4f);
+}
+
+TEST(MSETest, Gradient) {
+	core::Tensor y_true(1, 3);
+	core::Tensor y_pred(1, 3);
+	y_true.set(0, 0, 1.0f); y_true.set(0, 1, 2.0f); y_true.set(0, 2, 3.0f);
+	y_pred.set(0, 0, 2.0f); y_pred.set(0, 1, 2.0f); y_pred.set(0, 2, 4.0f);
+	// grad = 2 * (y_pred - y_true) = [2, 0, 2]
+	core::Tensor grad = losses::MSE::gradient(y_true, y_pred);
+	EXPECT_FLOAT_EQ(grad.get(0, 0), 2.0f);
+	EXPECT_FLOAT_EQ(grad.get(0, 1), 0.0f);
+	EXPECT_FLOAT_EQ(grad.get(0, 2), 2.0f);
 }

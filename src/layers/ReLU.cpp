@@ -13,3 +13,15 @@ void ReLU::apply_inplace(core::Tensor& tensor) {
 }
 
 }
+
+core::Tensor ReLU::gradient(const core::Tensor& tensor) {
+    int rows = tensor.getRows();
+    int cols = tensor.getCols();
+    core::Tensor grad(rows, cols);
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            grad.set(i, j, tensor.get(i, j) > 0.0f ? 1.0f : 0.0f);
+        }
+    }
+    return grad;
+}
