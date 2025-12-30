@@ -1,3 +1,4 @@
+// ...existing code...
 #include "nevrocpp/layers/ReLU.hpp"
 
 namespace nevrocpp::layers {
@@ -12,8 +13,6 @@ void ReLU::apply_inplace(core::Tensor& tensor) {
     }
 }
 
-}
-
 core::Tensor ReLU::gradient(const core::Tensor& tensor) {
     int rows = tensor.getRows();
     int cols = tensor.getCols();
@@ -25,3 +24,5 @@ core::Tensor ReLU::gradient(const core::Tensor& tensor) {
     }
     return grad;
 }
+
+} // namespace nevrocpp::layers

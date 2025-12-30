@@ -10,12 +10,14 @@ void train_step(core::Tensor& inputs, core::Tensor& weights, const core::Tensor&
     // Forward: salida = inputs.dot(weights)
     core::Tensor outputs = inputs.dot(weights);
     // Activación
-    layers::ReLU::apply_inplace(outputs);
+    layers::ReLU relu;
+    relu.apply_inplace(outputs);
     // Cálculo de error
-    float loss = losses::MSE::compute(targets, outputs);
+    losses::MSE mse;
+    float loss = mse.compute(targets, outputs);
     std::cout << "Loss: " << loss << std::endl;
     // Gradiente del error respecto a la salida
-    core::Tensor grad_loss = losses::MSE::gradient(targets, outputs);
+    core::Tensor grad_loss = mse.gradient(targets, outputs);
     // Gradiente respecto a los pesos (simplificado, sin backprop completo)
     // dL/dW = X^T . grad_loss
     core::Tensor inputs_T(inputs.getCols(), inputs.getRows());

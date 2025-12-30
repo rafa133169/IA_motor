@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/cmake_install.cmake",
+		"C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/tests/cmake_install.cmake",
+		"C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-build/cmake_install.cmake",
+		"C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

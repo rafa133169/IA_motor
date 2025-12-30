@@ -1,0 +1,17 @@
+{
+  "tests": 1,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ReLUTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "EliminatesNegatives",
+          "file": "C:\/Users\/Canchesky\/Documents\/11oCuatri\/Motor_AI\/tests\/test_relu.cpp",
+          "line": 7
+        }
+      ]
+    }
+  ]
+}

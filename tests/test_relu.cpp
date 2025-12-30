@@ -13,7 +13,8 @@ TEST(ReLUTest, EliminatesNegatives) {
     t.set(0, 3, 2.0f);
     t.set(0, 4, 0.0f);
 
-    layers::ReLU::apply_inplace(t);
+    layers::ReLU relu;
+    relu.apply_inplace(t);
 
     EXPECT_FLOAT_EQ(t.get(0, 0), 0.0f);
     EXPECT_FLOAT_EQ(t.get(0, 1), 0.5f);

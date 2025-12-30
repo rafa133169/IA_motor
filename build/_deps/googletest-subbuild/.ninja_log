@@ -1,0 +1,21 @@
+# ninja log v7
+3	80	7887771839377187	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	20d774ffcc246b14
+3	80	7887771839377187	C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	20d774ffcc246b14
+80	2901	7887771867588106	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	1466acc08bda4772
+80	2901	7887771867588106	C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	1466acc08bda4772
+2902	2978	7887771868354756	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	edf0d0d337adb6bf
+2902	2978	7887771868354756	C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	edf0d0d337adb6bf
+2978	3053	7887771869077713	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	d94c3bd7a2306c76
+2978	3053	7887771869077713	C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	d94c3bd7a2306c76
+3053	3160	7887771870152201	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	237966428f1f6a50
+3053	3160	7887771870152201	C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	237966428f1f6a50
+3160	3335	7887771871814575	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	7c8f0bb88277f18
+3160	3335	7887771871814575	C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	7c8f0bb88277f18
+3335	3522	7887771873775246	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	2e396e940908b452
+3335	3522	7887771873775246	C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	2e396e940908b452
+3522	3609	7887771874683039	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	1586e6506136ec3e
+3522	3609	7887771874683039	C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	1586e6506136ec3e
+3610	3721	7887771875778888	CMakeFiles/googletest-populate-complete	806d3e58fcc738be
+3610	3721	7887771875778888	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	806d3e58fcc738be
+3610	3721	7887771875778888	C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	806d3e58fcc738be
+3610	3721	7887771875778888	C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	806d3e58fcc738be

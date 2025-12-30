@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/tests/test_relu[1]_tests.cmake")
+  include("C:/Users/Canchesky/Documents/11oCuatri/Motor_AI/build/tests/test_relu[1]_tests.cmake")
+else()
+  add_test(test_relu_NOT_BUILT test_relu_NOT_BUILT)
+endif()

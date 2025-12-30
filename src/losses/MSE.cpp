@@ -19,8 +19,6 @@ float MSE::compute(const core::Tensor& y_true, const core::Tensor& y_pred) {
 	return sum / (rows * cols);
 }
 
-} // namespace nevrocpp::losses
-
 core::Tensor MSE::gradient(const core::Tensor& y_true, const core::Tensor& y_pred) {
 	int rows = y_true.getRows();
 	int cols = y_true.getCols();
@@ -36,3 +34,5 @@ core::Tensor MSE::gradient(const core::Tensor& y_true, const core::Tensor& y_pre
 	}
 	return grad;
 }
+
+} // namespace nevrocpp::losses

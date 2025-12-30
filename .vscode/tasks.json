@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "CMake: build and run all examples/tests",
+			"type": "shell",
+			"command": "mkdir -Force build; cd build; cmake ..; cmake --build .; if (Test-Path .\\examples\\basic_usage.exe) { .\\examples\\basic_usage.exe } if (Test-Path .\\examples\\basic_training.exe) { .\\examples\\basic_training.exe } if (Test-Path .\\examples\\polymorphic_usage.exe) { .\\examples\\polymorphic_usage.exe } if (Test-Path .\\tests\\test_tensor.exe) { .\\tests\\test_tensor.exe } if (Test-Path .\\tests\\test_relu.exe) { .\\tests\\test_relu.exe }",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

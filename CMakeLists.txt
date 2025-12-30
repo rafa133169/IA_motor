@@ -14,6 +14,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 add_library(nevrocpp
     src/core/Tensor.cpp
     src/layers/ReLU.cpp
+    src/losses/MSE.cpp
 )
 
 target_include_directories(nevrocpp
